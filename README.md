@@ -42,7 +42,7 @@ wlp2s0: WPA: Key negotiation completed with XX:XX:XX:XX:XX:XX [PTK=CCMP GTK=CCMP
 wlp2s0: CTRL-EVENT-CONNECTED - Connection to XX:XX:XX:XX:XX:XX completed [id=1 id_str=]
 ```
 
-Consult your distributions wiki for instructions on configuring wpa_supplicant system services, as this is not distribution agnostic. On Arch Linux, one can copy the configuration file to /etc/wpa_supplicant/wpa_supplicant@[interface].conf and enable the wpa_supplicant service using 
+Consult your distributions wiki for instructions on configuring wpa_supplicant system services, as this is not distribution agnostic. On Arch Linux, one can copy the configuration file to /etc/wpa_supplicant/wpa_supplicant-[interface].conf and enable the wpa_supplicant service using 
 ```bash
 sudo systemctl enable --now wpa_supplicant@[interface].service
 ```
